@@ -13,6 +13,22 @@ const jess = {
   }
 }
 
+let jeshan ={ 
+    firstname:'jeshan',
+    age:19,
+    lastname:'chhabra' ,
+    program:'COPA',
+     home:'india',
+     interests:['playing','music','dance'],
+     bio: function(){
+      alert("i am "+ jeshan.firstname+""+ jeshan.lastname);
+     },
+    info: function(){
+          alert("i am "+ jeshan.firstname+" "+jeshan.lastname+"."+"i am "+jeshan.age+" years old."+"i was enrolled in "+jeshan.program+"i have intersts in"+jeshan.interests[0])
+    }
+
+}
+
 const chris = {
     fName: 'Chris',
     lName: 'Pander',
@@ -62,58 +78,13 @@ let anmol = {
   }
 };
 
-let kuwar = {
-	firstName: 'Kuwar',
-	lastname: 'Dua',
-	program: 'Computer Programming',
-	home: 'India',
-	interests: ['badminton', 'cricket', 'watches','perfumes'],
-	intro: function(){
-		alert('Hi, I am ' + kuwar.firstName + ' ' + kuwar.lastname);
-	},
-	bio: function(){
-		alert(kuwar.firstName + ' ' + kuwar.lastname + ' is in '  kuwar.program + ' and calls ' + kuwar.home + ' .My interests are ' + kuwar.interests[0] + ' ' + kuwar.interests[1] + ' ' + kuwar.interests[2] + ' ' + kuwar.interests[3])
-	}
-
-};
-
-let britt = {
-      name:{
-            first: 'Brittany',
-            last: 'Samuels',
-      },
-      program: 'COPR',
-      home:{
-            location: 'Oro-Medonte',
-            home: 'my bedroom',
-      },
-      interests:['making music', 'software develpopment', 'music production', 'djing', 'hockey', 'video games', 'longboarding' ,'skateboard'],
-      hi: function(){
-            let hi = 'hi my name is Brittany! Nice to meeet you';
-            alert(hi);
-      },
-      
-      info: alert(britt.name[0] +  britt.name[1] + britt.program + britt.home[0] + britt.home[1] + britt.insterests[0] + britt.insterests[1] + britt.insterests[2] + britt.insterests[3] + britt.insterests[4] + britt.insterests[5]),
-
-}   
-
-//pet peeve object
-let petPeeve = {
-      petPeeve: 'Ignorance', 
-}
-
-//deleting my last name
-delete britt.last; 
-
-
 //add event listener function or event handler property here 
 
 let button = document.getElementById('jess'); 
 let chrisButton = document.getElementById('chris');
 let anmolButton = document.getElementById('anmol');
+let jeshanbtn= document.getElementById('jeshan');
 let vidhiButton=document.getElementById('vidhi');
-let kuwarButton = document.getElementById('kuwar');
-let thisButton = document.getElementById('Brittany'); 
 //button.addEventListener('click', jess.greeting); 
 
 button.addEventListener('click', function(){
@@ -129,7 +100,7 @@ chrisButton.addEventListener('click', function(){
 vidhiButton.addEventListener('click', function(){
   vidhi.bio(); 
 });
-kuwarButton.addEventListener('click', function(){
-	kuwar.bio();
-});
 
+jeshan.addEventListener('click', function(){
+  jeshan.bio(); 
+});
